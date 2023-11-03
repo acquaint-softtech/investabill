@@ -1,0 +1,155 @@
+@media only screen and (max-width: 767px) {
+  .w-85,
+.w-80 {
+    width: 90% !important;
+  }
+
+  .banner-box {
+    position: static !important;
+  }
+  .banner-box .banner-bullets.left,
+.banner-box .banner-bullets.right {
+    padding: 10px 0px !important;
+    float: unset !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list,
+.banner-box .banner-bullets.right .banner-bullets-list {
+    width: 45% !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list:nth-of-type(odd),
+.banner-box .banner-bullets.right .banner-bullets-list:nth-of-type(odd) {
+    margin-right: 16px !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list:nth-of-type(even),
+.banner-box .banner-bullets.right .banner-bullets-list:nth-of-type(even) {
+    float: right !important;
+    text-align: right;
+    margin-left: 16px !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list:nth-of-type(even) img,
+.banner-box .banner-bullets.right .banner-bullets-list:nth-of-type(even) img {
+    float: right !important;
+    margin: auto !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list:nth-of-type(even):before,
+.banner-box .banner-bullets.right .banner-bullets-list:nth-of-type(even):before {
+    right: -16px !important;
+    left: unset !important;
+    border-right: none !important;
+    border-left: 16px solid #0e6285 !important;
+    border-top: 16px solid transparent !important;
+    border-bottom: 16px solid transparent !important;
+  }
+  .banner-box .banner-bullets.right .banner-bullets-list:nth-of-type(odd):before {
+    left: -16px;
+    border-left: none !important;
+    border-right: 16px solid #0e6285 !important;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+
+  .cmsSection1 .row .pt-xs-4 {
+    padding-top: 20px;
+  }
+
+  .titleHead {
+    font-size: 22px !important;
+  }
+
+  .lineShape:before, .lineShape:after {
+    display: none;
+  }
+
+  .section4 {
+    background-size: cover;
+  }
+  .section4 .shapeBox .Tshape1,
+.section4 .shapeBox .Tshape2 {
+    margin: -1px;
+  }
+  .section4 .shapeBox .Tshape1::after, .section4 .shapeBox .Tshape1::before,
+.section4 .shapeBox .Tshape2::after,
+.section4 .shapeBox .Tshape2::before {
+    height: 40px !important;
+  }
+  .section4 .shapeBox .Tshape1 label,
+.section4 .shapeBox .Tshape2 label {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .section5 .fildBox .tableBox {
+    margin-bottom: 20px;
+  }
+  .section5 .fildBox .tableBox tr td,
+.section5 .fildBox .tableBox tr th {
+    padding: 5px !important;
+    font-size: 12px;
+  }
+  .section5 .fildBox .formBox {
+    width: 90% !important;
+  }
+  .section5 .fildBox .formBox .head p {
+    font-size: 14px !important;
+  }
+
+  .section10 .row {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .section10 .row .order1 {
+    order: 1;
+  }
+  .section10 .row .contBox {
+    padding: 10px 0 !important;
+  }
+  .section10 .row .contBox.pr,
+.section10 .row .contBox.pl {
+    padding: 0;
+  }
+
+  footer .signUpBox .box1 {
+    text-align: center;
+    width: max-content;
+    margin: auto;
+  }
+  footer .signUpBox .box2 {
+    margin: 10px auto;
+  }
+  footer .linkList .mailUl {
+    flex-direction: column !important;
+  }
+  footer .linkList .mailUl .contactUs .mailIcon a {
+    display: block !important;
+  }
+  footer .FootCont label {
+    text-align: center;
+  }
+  footer .FootCont ul {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+@media (min-width: 360px) and (max-width: 413px) {
+  .section5 .fildBox .tableBox {
+    margin-bottom: 20px;
+  }
+  .section5 .fildBox .tableBox tr td,
+.section5 .fildBox .tableBox tr th {
+    padding: 5px !important;
+    font-size: 12px;
+  }
+  .section5 .fildBox .formBox {
+    width: 90% !important;
+  }
+  .section5 .fildBox .formBox .head p {
+    font-size: 12px !important;
+  }
+}

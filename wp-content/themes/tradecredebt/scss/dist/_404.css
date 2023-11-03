@@ -1,0 +1,9 @@
+body.Page404 {
+  background-color: #e8fcfe;
+}
+body.Page404 .Section404 {
+  padding: 100px 0;
+}
+body.Page404 .Section404 .imgBox {
+  margin: auto;
+}

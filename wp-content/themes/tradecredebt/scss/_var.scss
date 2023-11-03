@@ -1,0 +1,25 @@
+$darkBlue: #2e4369;
+$fontNavColor: #13213a;
+$mainOrg: #ff8400;
+$footBg: #14233f;
+$btnDark: #131313;
+$bullet-color: #0e6285;
+$bullet-text-color: #ffffff;
+
+
+
+@function set-bullet($bullet-text-color) {
+    @if (lightness($bullet-text-color) < 40%) {
+        @return white;
+    } @else {
+        @return black;
+    }
+}
+
+@function set-filter($bullet-color) {
+    @if (lightness($bullet-color) < 40%) {
+        @return invert(0);
+    } @else {
+        @return invert(1);
+    }
+}

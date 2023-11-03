@@ -1,0 +1,7 @@
+/* Date : 07-10-20 - hide acf image delete link on edi image popup */
+.acf-expanded.acf-media-modal.-edit .attachments-browser .attachment-info .delete-attachment {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+

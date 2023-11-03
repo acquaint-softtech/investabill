@@ -1,0 +1,385 @@
+header {
+    position: relative;
+    z-index: 1;
+    .container {
+        .nav {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row;
+            &_logo {
+                padding: 5px;
+                margin: auto;
+                width: 100% - 64%;
+                img {
+                    width: 90%;
+                }
+            }
+            &_menu {
+                width: 100% - 36%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &__request {
+                    text-align: right;
+                    min-height: 26px;
+                    .btn-org {
+                        padding: 3px 12px;
+                        font-size: 12px;
+                        letter-spacing: 0.5px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        box-shadow: 0 0 8px #ff8400;
+                    }
+                }
+                &__button {
+                    display: none;
+                    .btn_menu {
+                        border: none;
+                        position: relative;
+                        width: 30px;
+                        height: auto;
+                        padding: 10px;
+                        background: transparent;
+                        box-shadow: none !important;
+                        span {
+                            position: absolute;
+                            left: 0;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: -2px;
+                                left: 0;
+                                width: 30px;
+                                height: 3px;
+                                background-color: #000;
+                                border-radius: 6px;
+                            }
+                        }
+                        &:focus,
+                        &:hover,
+                        &:active {
+                            box-shadow: none !important;
+                            border: none !important;
+                            outline: none !important;
+                        }
+                        &::after,
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0px;
+                            left: 0;
+                            width: 30px;
+                            height: 3px;
+                            background-color: #000;
+                            border-radius: 6px;
+                        }
+                        &::before {
+                            top: 16px;
+                        }
+
+                        &.menuAct {
+                            transition: all 0.3s linear;
+                            &::before {
+                                top: 10px;
+                                transform: rotateZ(45deg);
+                                animation: menuAct 0.2s linear;
+                                width: 28px;
+                            }
+                            &::after {
+                                transform: rotateZ(-45deg);
+                                top: 10px;
+                                animation: menuAct 0.2s linear;
+                                width: 28px;
+                            }
+                            span {
+                                transition: all 0.1s linear;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+                @keyframes menuAct {
+                    to {
+                        opacity: 0;
+                    }
+                    from {
+                        transform: none;
+                    }
+                }
+                &__menubar {
+                    width: 100%;
+                    text-align: right;
+                    padding-top: 10px;
+                    padding-bottom: 8px;
+                    .menu {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        &_list {
+                            display: inline-block;
+                            &.dropMenu {
+                                position: relative;
+
+                                .subMenu {
+                                    display: none;
+                                    animation: rotateMenu 400ms ease-in-out forwards;
+                                    transform-origin: top center;
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+                                    min-width: 180px;
+                                    position: absolute;
+                                    top: 38px;
+                                    left: -50%;
+                                    background-color: white;
+                                    padding-top: 10px;
+                                    &:hover {
+                                        display: block;
+                                    }
+                                    &::after {
+                                        font-family: FontAwesome;
+                                        content: "\f0d8";
+                                        position: absolute;
+                                        top: -20px;
+                                        left: 0;
+                                        right: 0;
+                                        width: 16px;
+                                        margin: auto;
+                                        color: #4fc6e0;
+                                        font-size: 26px;
+                                        padding-top: 5px;
+                                        pointer-events: none;
+                                    }
+                                    &_list {
+                                        a {
+                                            display: block;
+                                            padding: 10px 0px;
+                                            text-align: left;
+                                            color: #13213a;
+                                            border-bottom: solid 1px #7abbca45;
+                                            margin: 0 10px;
+                                            letter-spacing: 0.8px;
+                                            text-decoration: none;
+                                            &:hover {
+                                                color: #4fc6e0;
+                                            }
+                                        }
+                                        &:last-child {
+                                            border-bottom: #4fc6e0 4px solid;
+                                        }
+                                    }
+                                }
+                            }
+                            .link {
+                                padding: 10px 10px;
+                                font-size: 16px;
+                                color: #13213a;
+                                text-decoration: none;
+                                transition: all 0.3s ease-in-out;
+                                position: relative;
+                                .fa {
+                                    font-size: 22px;
+                                }
+                                &:hover {
+                                    color: #4fc6e0;
+                                }
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 16px;
+                                    left: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto 0;
+                                    background-color: #13213a;
+                                }
+                                &.active {
+                                    color: #4fc6e0;
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        bottom: 3px;
+                                        left: 0;
+                                        right: 0;
+                                        margin: auto;
+                                        width: 75%;
+                                        height: 2px;
+                                        background-color: #4fc6e0;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(1) {
+                                .link {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                .link {
+                                    padding-right: 0;
+                                }
+                            }
+                            &.dropMenu {
+                                .link {
+                                    &::before {
+                                        content: "";
+                                    }
+                                    &:hover ~ .subMenu {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    70% {
+        transform: rotateX(20deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav_logo {
+        width: 100% !important  ;
+        text-align: center;
+        img {
+            width: auto !important;
+        }
+    }
+
+    .nav_menu {
+        width: 100% !important;
+        .sm-device {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            .nav_menu__request {
+                width: max-content !important;
+            }
+            .nav_menu__button {
+                display: block;
+                align-items: center;
+                line-height: 0;
+            }
+        }
+
+        .nav_menu__menubar {
+            transition: all 0.3s linear;
+            &.open {
+                display: block !important;
+                animation: rotateMenu 400ms ease-in-out forwards;
+                transform-origin: top center;
+            }
+            .menu {
+                .menu_list {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    border-bottom: solid 1px #f6f6f6;
+                    &:first-child {
+                        a {
+                            display: flex !important;
+                        }
+                    }
+                    a {
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    &.dropMenu {
+                        .link {
+                            &:hover ~ .subMenu {
+                                display: none !important;
+                            }
+                        }
+                        &.open {
+                            .subMenu {
+                                margin-bottom: 20px;
+                                display: block !important;
+                                padding-top: 0 !important;
+                            }
+                            .link {
+                                color: #4fc6e0 !important;
+                            }
+                            .dropArrow {
+                                transition: all 0.5s ease-in-out;
+                                color: #4fc6e0 !important;
+                                &::after {
+                                    content: "\f0d8" !important;
+                                    color: #4fc6e0 !important;
+                                }
+                            }
+                        }
+                        .dropArrow {
+                            position: absolute;
+                            right: 0;
+                            top: 6px;
+                            width: 30px;
+                            height: 30px;
+                            margin: auto;
+                            z-index: 1;
+                            &::after {
+                                display: block !important;
+                                width: 30px !important;
+                                height: 30px !important;
+                                background-color: transparent !important;
+                                right: 0;
+                                margin: auto;
+                                text-align: center;
+                                left: unset !important;
+                                font-family: FontAwesome;
+                                content: "\f0d7";
+                                font-size: 26px;
+                                color: #13213a;
+                                bottom: 6px;
+                                position: relative;
+                            }
+                        }
+
+                        .subMenu {
+                            position: static !important;
+                            &::after {
+                                display: none;
+                                left: 20px;
+                                margin: 0 !important;
+                            }
+                        }
+                    }
+                }
+
+                .menu_list.dropMenu.open {
+                    .link {
+                        display: block;
+                        &:hover ~ .subMenu {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav_menu__menubar {
+        display: none;
+    }
+}

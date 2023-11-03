@@ -1,0 +1,415 @@
+@media only screen and (max-width: 767px) {
+    // .simplybook-widget-button{
+    //     padding: 5px 10px !important;
+    // }
+    header .container .nav {
+        margin-top: 35px !important;
+    }
+    body {
+        font-size: 14px;
+    }
+    .section10 .row .contBox p,
+    footer .container .linkList ul.mailUl li.mainLI ul li a,
+    footer .container .linkList ul.mailUl li.mainLI ul li label {
+        font-size: 14px;
+    }
+    .btn,
+    footer .container .linkList ul.mailUl li.mainLI .linkTitle {
+        font-size: 18px !important;
+    }
+    .fildBox {
+        .formBox {
+            .head {
+                .img-fluid {
+                    height: 110px !important;
+                }
+            }
+        }
+    }
+    .size-full,
+    .size-large,
+    .size-medium {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .w-85,
+    .w-80 {
+        width: 90% !important;
+    }
+    .mx-sm-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .page-top-table,
+    .page-bottom-table {
+        width: 100% !important;
+    }
+    .banner {
+        height: auto !important;
+        video {
+            object-fit: contain !important;
+            width: 100% !important;
+            height: auto !important;
+            position: static !important;
+        }
+        img.img-fluid.lazyloaded {
+            width: 100%;
+            height: auto !important;
+        }
+        &-box {
+            // display: none;
+            position: static !important;
+            transform: none !important;
+            padding-top: 25px;
+            padding-bottom: 0;
+            .row {
+                .col-md-6 {
+                    width: 50%;
+                    &.left {
+                        margin: auto;
+                        margin-left: auto !important;
+                    }
+                    &.right {
+                        margin: auto;
+                        margin-right: auto !important;
+                    }
+                }
+            }
+            .banner-bullets.right {
+                .banner-bullets-title {
+                    .banner-title {
+                        text-align: right !important;
+                    }
+                }
+            }
+            .banner-bullets-title {
+                width: 100%;
+                position: static !important;
+                .banner-title {
+                    color: black !important;
+                    // font-size: 10px !important;
+                    margin-bottom: 15px !important;
+                    overflow: hidden;
+                    font-size: 16px !important;
+                }
+            }
+            .banner-bullets {
+                width: auto !important;
+                padding: 0px !important;
+                float: unset !important;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .banner-bullets-list {
+                    width: 100% !important;
+                    padding: 5px !important;
+                    // font-size: 10px !important;
+                    line-height: 22px !important;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .cmsSection1 {
+        .row {
+            .pt-xs-4 {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .titleHead {
+        font-size: 22px !important;
+    }
+
+    .lineShape {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .section4 {
+        background-size: cover;
+
+        .shapeBox {
+            .Tshape1,
+            .Tshape2 {
+                margin: -1px;
+
+                &::after,
+                &::before {
+                    height: 40px !important;
+                }
+
+                label {
+                    font-size: 16px !important;
+                    height: 40px !important;
+                    line-height: 40px !important;
+                }
+            }
+        }
+    }
+
+    .section5 {
+        .fildBox {
+            .tableBox {
+                margin-bottom: 20px;
+
+                tr {
+                    td,
+                    th {
+                        padding: 5px !important;
+                        font-size: 12px;
+                        white-space: unset !important;
+                    }
+                }
+            }
+
+            .formBox {
+                width: 90% !important;
+
+                // .head {
+                //     p {
+                //         font-size: 11px !important;
+                //     }
+                // }
+            }
+        }
+    }
+
+    .section10 {
+        .row {
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+            &:nth-child(odd) {
+                .col-lg-6 {
+                    &:first-child {
+                        order: 1;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                    }
+                }
+            }
+
+            .contBox {
+                padding: 10px 0 !important;
+            }
+
+            .contBox.pr,
+            .contBox.pl {
+                padding: 0;
+            }
+        }
+    }
+
+    footer {
+        .signUpBox {
+            .box1 {
+                text-align: center;
+                width: max-content;
+                margin: auto;
+            }
+
+            .box2 {
+                margin: 10px auto;
+            }
+        }
+
+        .linkList {
+            margin-top: 15px !important;
+            margin-bottom: 30px !important;
+            .mailUl {
+                flex-direction: column !important;
+
+                .contactUs {
+                    .mailIcon {
+                        a {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .FootCont {
+            label {
+                text-align: center;
+            }
+
+            ul {
+                width: 100% !important;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 414px) and (max-width: 492px) {
+    .titleHead {
+        font-size: 16px !important;
+        span {
+            &:after,
+            &::before {
+                height: 20px !important;
+            }
+        }
+    }
+    .banner-box .banner-bullets-title .banner-title {
+        font-size: 13px !important;
+    }
+    .banner-bullets-list {
+        font-size: 10px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+    .banner-box .banner-bullets-title .banner-title {
+        font-size: 11px !important;
+    }
+    .banner-bullets {
+        .banner-bullets-list {
+            font-size: 8px !important;
+        }
+    }
+    .section4 .shapeBox .Tshape1 label,
+    .section4 .shapeBox .Tshape2 label {
+        font-size: 14px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+    }
+    .banner-bullets-title {
+        .banner-title {
+            color: black !important;
+            font-size: 13px !important;
+        }
+    }
+    .titleHead {
+        font-size: 14px !important;
+        span {
+            &:after,
+            &::before {
+                height: 20px !important;
+            }
+        }
+    }
+
+    .section5 {
+        .fildBox {
+            .tableBox {
+                margin-bottom: 20px;
+
+                tr {
+                    td,
+                    th {
+                        padding: 5px !important;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .formBox {
+                width: 90% !important;
+
+                // .head {
+                //     p {
+                //         font-size: 10px !important;
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .fildBox .formBox .head .img-fluid {
+        height: 130px !important;
+    }
+    .titleHead {
+        font-size: 12px !important;
+    }
+    .banner-box .banner-bullets-title .banner-title {
+        margin-bottom: 8px !important;
+    }
+    .banner-bullets .banner-bullets-list {
+        font-size: 6px !important;
+        margin-bottom: 6px !important;
+    }
+    .banner-box .container .row .banner-bullets-list {
+        width: 100% !important;
+        padding: 5px !important;
+        line-height: 14px !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 24px !important;
+    }
+    .banner-box .container .row .banner-bullets.right .banner-bullets-list:before {
+        left: -12px;
+        border-left: none;
+        border-right: 12px solid #0e6285;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+    }
+    .banner-box .container .row .banner-bullets-list:before {
+        content: "";
+        position: absolute;
+        right: -12px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 12px solid #0e6285;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+    }
+    .banner-box .container .row .banner-bullets-list img {
+        width: 12px;
+    }
+
+    .section4 .shapeBox .Tshape1,
+    .section4 .shapeBox .Tshape2 {
+        margin: -1px;
+        line-height: 20px;
+    }
+    .section4 .shapeBox .Tshape1 label,
+    .section4 .shapeBox .Tshape2 label {
+        font-size: 11px !important;
+        height: 32px !important;
+        line-height: 32px !important;
+    }
+    .section4 .shapeBox .Tshape1::after,
+    .section4 .shapeBox .Tshape1::before,
+    .section4 .shapeBox .Tshape2::after,
+    .section4 .shapeBox .Tshape2::before {
+        height: 32px !important;
+    }
+    .titleHead span:after,
+    .titleHead span::before {
+        height: 14px !important;
+    }
+}
+@media (min-width: 360px) and (max-width: 410px) {
+    .fildBox .formBox .head .img-fluid {
+        height: 125px !important;
+    }
+}
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .banner {
+        .banner-box {
+            .col-md-6 {
+                .banner-bullets {
+                    .banner-bullets-title {
+                        .banner-title {
+                        }
+                    }
+                    .banner-bullets-list {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+}

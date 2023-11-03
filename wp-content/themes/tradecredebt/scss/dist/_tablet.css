@@ -1,0 +1,155 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lineShape:before, .lineShape:after {
+    width: 50px !important;
+  }
+
+  .banner-box .banner-bullets.left {
+    padding: 10px 20px !important;
+    float: unset !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list {
+    width: 150px !important;
+    height: 18px !important;
+    font-size: 10px !important;
+    padding: 1px 8px !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list img {
+    width: 13px !important;
+  }
+  .banner-box .banner-bullets.left .banner-bullets-list:before {
+    right: -9px !important;
+    border-left: 9px solid #0e6285 !important;
+    border-top: 9px solid transparent !important;
+    border-bottom: 9px solid transparent !important;
+  }
+  .banner-box .banner-bullets.right {
+    float: right !important;
+    padding: 10px 20px !important;
+  }
+  .banner-box .banner-bullets.right .banner-bullets-list {
+    width: 150px !important;
+    height: 18px !important;
+    font-size: 10px !important;
+    padding: 1px 8px !important;
+  }
+  .banner-box .banner-bullets.right .banner-bullets-list img {
+    width: 13px !important;
+  }
+  .banner-box .banner-bullets.right .banner-bullets-list:before {
+    left: -9px !important;
+    right: 0 !important;
+    border-right: 9px solid #0e6285 !important;
+    border-top: 9px solid transparent !important;
+    border-bottom: 9px solid transparent !important;
+  }
+
+  .section5 .fildBox .tableBox {
+    margin-bottom: 30px;
+  }
+  .section5 .fildBox .formBox .head img {
+    width: 100%;
+  }
+  .section5 .fildBox .formBox .head p {
+    font-size: 20px !important;
+  }
+
+  .section10 .row {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .section10 .row .order1 {
+    order: 1;
+  }
+  .section10 .row .contBox {
+    padding: 10px 0 !important;
+  }
+  .section10 .row .contBox.pr,
+.section10 .row .contBox.pl {
+    padding: 0;
+  }
+
+  header .topCont {
+    text-align: center;
+    padding: 8px 0;
+  }
+  header .topCont ul {
+    margin: auto !important;
+  }
+  header .navbarWrap .container {
+    padding: 0;
+  }
+  header .navbarWrap .RequestQuote {
+    text-align: center !important;
+    line-height: 50px !important;
+    padding: 0 30px;
+    bottom: -3px !important;
+  }
+  header .navbarWrap .onMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header .navbarWrap .onMobile .navbar-brand h1 {
+    margin-left: 15px;
+  }
+  header .navbarWrap .onMobile .navbar-brand img {
+    margin-top: -15px !important;
+  }
+  header .navbarWrap .onMobile .navbar-toggler {
+    color: white !important;
+    background: #2e4369 !important;
+    border-color: #2e4369 !important;
+    border-radius: 0 !important;
+  }
+  header .navbarWrap .navbar-nav {
+    box-shadow: 0px 4px 8px #0000000a;
+    margin-bottom: 15px;
+  }
+  header .navbarWrap .navbar-nav .nav-item.active::after {
+    display: none;
+  }
+  header .navbarWrap .navbar-nav .nav-item .nav-link {
+    border-bottom: solid 1px #f3f3f3;
+  }
+  header .navbarWrap .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    display: none;
+  }
+
+  footer .signUpBox .box1 {
+    text-align: center;
+    width: max-content;
+    margin: auto;
+  }
+  footer .signUpBox .box2 {
+    margin: 10px auto;
+  }
+  footer .linkList {
+    display: flex !important;
+  }
+  footer .linkList .mailUl {
+    display: block !important;
+    flex-direction: row !important;
+  }
+  footer .linkList .mailUl .mainLI {
+    width: 50% !important;
+    padding: 10px 20px;
+    border: none;
+  }
+  footer .linkList .mailUl .mainLI .contactUs .mailIcon a {
+    display: block !important;
+  }
+  footer .FootCont {
+    text-align: center;
+  }
+  footer .FootCont label {
+    text-align: center;
+  }
+  footer .FootCont ul {
+    width: 100% !important;
+    text-align: center;
+  }
+}
